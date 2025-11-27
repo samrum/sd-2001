@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "sd-2001",
+  "compatibility_date": "2025-11-21",
+  "assets": {
+    "directory": "./dist"
+  },
+  "observability": {
+    "enabled": true
+  },
+  "vars": { "VITE_DEALS_API": "" }
+}

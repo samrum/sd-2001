@@ -1,21 +1,17 @@
-# SD Ancient View
+# SD 2001
 
-It's [Slickdeals](https://slickdeals.net) recreated as it looked in January 2001 with Frontpage deal fetching from the SD Frontpage RSS feed. You can see what it looked like via the internet archive here: https://web.archive.org/web/20010119175000/http://www.slickdeals.net:80/
+[Slickdeals](https://slickdeals.net) recreated as it looked in January 2001
 
-A deployed instance of this project can be found [here](http://rubenmedina.com/sd-ancient/).
+[Internet archive snapshot](https://web.archive.org/web/20010119175000/http://www.slickdeals.net:80/)
 
-Built using [Preact](https://preactjs.com/). Uses a local deal server that fetches and parses the Slickdeals Frontpage RSS feed.
+[Deployed here](https://2001.sd.samrum.com)
 
-## Build Instructions
+## Development
 
-This project uses [yarn](https://yarnpkg.com/en/docs/install) for package management and webpack for project development.
+Use [bun](https://bun.com/)
 
-### Local Development
+Define the VITE_DEALS_API environment variable with the url of a deals API
 
-1. Inside of the project root directory, run `yarn install` to download applicaton dependencies
-2. Run `yarn dev` to run the application in development mode. In development mode, the application will be accessible via localhost (port displayed on run) and any changes made to javascript and sass files will hot reload browser content.
+### Deployment
 
-### Production Build
-
-1. Inside of the project root directory, run `yarn install` to download applicaton dependencies
-2. Run `yarn prod` to build a productionalized version of the application into the `dist` directory.
+Deploy using [Cloudflare workers](https://developers.cloudflare.com/workers/)
