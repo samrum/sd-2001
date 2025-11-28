@@ -1,26 +1,26 @@
-@import "default";
-@import "components/header";
-@import "components/intro";
-@import "components/widget";
-@import "components/latest-deals";
-@import "components/deal-details";
-@import "components/footer";
+@use "default";
+@use "components/header";
+@use "components/intro";
+@use "components/widget";
+@use "components/latest-deals";
+@use "components/deal-details";
+@use "components/footer";
 
 section.intro,
 section.page-content {
-    display: grid;
-    grid-template-columns: 138px 1fr 138px;
+  display: grid;
+  grid-template-columns: 138px minmax(0, 1fr) 138px;
 }
 
 .update-info {
-    font-size: 10px;
-    text-align: right;
+  font-size: 10px;
+  text-align: right;
 
-    &.hidden {
-        visibility: hidden;
-    }
+  &.hidden {
+    visibility: hidden;
+  }
 }
 
 main {
-    padding: 0 5px;
+  padding: 0 5px;
 }
